@@ -19,7 +19,7 @@ class AiBarcodeMobileCreatorPlugin extends AiBarcodeCreatorPlatform {
           "qrCodeContent":
               AiBarcodeCreatorPlatform.instance.initialValueOfCreator,
         },
-        creationParamsCodec: StandardMessageCodec(),
+        creationParamsCodec: const StandardMessageCodec(),
         onPlatformViewCreated: (int id) {
           //created callback
           onPlatformCreatorViewCreated(id);
@@ -35,7 +35,7 @@ class AiBarcodeMobileCreatorPlugin extends AiBarcodeCreatorPlatform {
           "qrCodeContent":
               AiBarcodeCreatorPlatform.instance.initialValueOfCreator,
         },
-        creationParamsCodec: StandardMessageCodec(),
+        creationParamsCodec: const StandardMessageCodec(),
         onPlatformViewCreated: (int id) {
           //created callback
           onPlatformCreatorViewCreated(id);
@@ -47,7 +47,8 @@ class AiBarcodeMobileCreatorPlugin extends AiBarcodeCreatorPlatform {
     } else {
       return Center(
         child: Text(
-          "$unsupportedPlatformDescription",
+          // "$unsupportedPlatformDescription",
+          unsupportedPlatformDescription,
         ),
       );
     }

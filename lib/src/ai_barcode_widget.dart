@@ -24,6 +24,7 @@ class PlatformAiBarcodeScannerWidget extends StatefulWidget {
   ///
   /// Constructor.
   PlatformAiBarcodeScannerWidget({
+    super.key,
     required ScannerController platformScannerController,
     String? unsupportedDescription,
   }) {
@@ -68,10 +69,11 @@ class _PlatformScannerWidgetState
   ///
   /// Web result callback
   void _webResultCallback(String result) {
-    if (widget._platformScannerController._scannerResult != null) {
-      //callback
-      widget._platformScannerController._scannerResult(result);
-    }
+    widget._platformScannerController._scannerResult(result);
+    // if (widget._platformScannerController._scannerResult != null) {
+    //   //callback
+    //   widget._platformScannerController._scannerResult(result);
+    // }
   }
 
   @override
@@ -110,7 +112,7 @@ class ScannerController {
   ///
   /// Constructor.
   ScannerController({
-    required scannerResult(String result),
+    required Function(String result) scannerResult,
     scannerViewCreated,
   }) {
     _scannerResult = scannerResult;
@@ -181,6 +183,7 @@ class PlatformAiBarcodeCreatorWidget extends StatefulWidget {
   String? _unsupportedDescription;
 
   PlatformAiBarcodeCreatorWidget({
+    super.key,
     required CreatorController creatorController,
     required String initialValue,
     String? unsupportedDescription,

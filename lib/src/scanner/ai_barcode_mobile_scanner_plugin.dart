@@ -21,8 +21,8 @@ class AiBarcodeMobileScannerPlugin extends AiBarcodeScannerPlatform {
         onPlatformViewCreated: (int id) {
           onPlatformScannerViewCreated(id);
         },
-        creationParams: <String, dynamic>{},
-        creationParamsCodec: StandardMessageCodec(),
+        creationParams: const <String, dynamic>{},
+        creationParamsCodec: const StandardMessageCodec(),
       );
     } else if (targetPlatform == TargetPlatform.iOS) {
       return UiKitView(
@@ -30,13 +30,14 @@ class AiBarcodeMobileScannerPlugin extends AiBarcodeScannerPlatform {
         onPlatformViewCreated: (int id) {
           onPlatformScannerViewCreated(id);
         },
-        creationParams: <String, dynamic>{},
-        creationParamsCodec: StandardMessageCodec(),
+        creationParams: const <String, dynamic>{},
+        creationParamsCodec: const StandardMessageCodec(),
       );
     } else {
       return Center(
         child: Text(
-          "$unsupportedPlatformDescription",
+          // "$unsupportedPlatformDescription",
+          unsupportedPlatformDescription,
         ),
       );
     }
