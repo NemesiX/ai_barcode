@@ -23,7 +23,7 @@ class _TaskNextState extends State<TaskNextPage> {
     // double screenWidth = window.physicalSize.width / window.devicePixelRatio;
     double screenWidth = View.of(context).physicalSize.width / View.of(context).devicePixelRatio;
     // double screenHeight = window.physicalSize.height / window.devicePixelRatio;
-    double screenHeight = View.of(context).physicalSize.height / View.of(context).devicePixelRatio;
+    // double screenHeight = View.of(context).physicalSize.height / View.of(context).devicePixelRatio;
 
     var screenWidthSize = screenWidth;
     return Scaffold(
