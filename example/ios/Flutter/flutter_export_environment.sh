@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=/Users/nemesix/fvm/versions/3.13.5"
-export "FLUTTER_APPLICATION_PATH=/Users/nemesix/Desktop/AndroidStudioProjects/nempos_delivery_base/packages/ai_barcode/example"
+export "FLUTTER_ROOT=/Users/rpiva/fvm/versions/stable"
+export "FLUTTER_APPLICATION_PATH=/Users/rpiva/Sviluppo/progetti-flutter/nempos_delivery_base/packages/ai_barcode/example"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
