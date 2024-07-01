@@ -17,14 +17,14 @@ packages:
     source: path
     version: "4.0.1"
   ai_barcode_platform_interface:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../ai_barcode_platform_interface"
       relative: true
     source: path
     version: "4.0.1"
   ai_barcode_web:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../ai_barcode_web"
       relative: true
